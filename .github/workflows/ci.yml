@@ -10,8 +10,6 @@ jobs:
         with:
           cache: 'npm'
       - run: node ./src/soma.js
-      - name: Clear npm cache
-      - run: npm cache clean --force
       - run: npm ci   
       - run: npm test
       - name: Login to Docker Hub

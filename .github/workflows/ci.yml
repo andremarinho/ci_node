@@ -31,7 +31,9 @@ jobs:
             context: .
             push: false
             tags: andrebezerramarinho1/soma:latest
-
+  
+  check-sonar:
+      steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
